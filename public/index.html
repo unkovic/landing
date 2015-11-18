@@ -16,18 +16,54 @@
     <body>
         
         <header>
-            <div class="container">
-                <nav>
-                    <ul class="nav nav-justified">
-                        <li><a href="#">About The App</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Screenshots</a></li>
-                        <li><a href="#">Download</a></li>
-                        <li><a href="#">Support</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav nav-justified">
+                            <li><a href="#">About The App</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Screenshots</a></li>
+                            <li><a href="#">Download</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </nav>
         </header>
+        
+        <section id="slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/slider_1.png" alt="first slider">
+                </div>
+                
+                <div class="item">
+                    <img src="img/slider_2.png" alt="first slider">
+                </div>
+                
+                <div class="item">
+                    <img src="img/slider_3.png" alt="first slider">
+                </div>
+            </div>
+            
+            <a href="#slider" role="button" data-slide="prev" class="left carousel-control"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a href="#slider" role="button" data-slide="next" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            
+            <ol class="carousel-indicators">
+                <li data-target="#slider" data-slide-to="0" class="active"></li>
+                <li data-target="#slider" data-slide-to="<1></1>"></li>
+                <li data-target="#slider" data-slide-to="2"></li>
+            </ol>
+        </section>
         
         <section class="about" id="about">
             <div class="container">
@@ -181,16 +217,29 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
-                        <img src="img/modal_tickets.png" alt="modal tickets" class="img-responsive">
+                        <a href="#modal" data-toggle="modal" data-image-url="img/modal_tickets.png">
+                            <img src="img/modal_tickets.png" alt="modal tickets" class="img-responsive">
+                        </a>
                     </div>
                     
                     <div class="col-sm-4">
-                        <img src="img/modal_trailers.png" alt="modal trailers" class="img-responsive">
+                        <a href="#modal" data-toggle="modal" data-image-url="img/modal_trailers.png">
+                            <img src="img/modal_trailers.png" alt="modal trailers" class="img-responsive">
+                        </a>
                     </div>
                     
                     <div class="col-sm-4">
-                        <img src="img/modal_points.png" alt="modal points" class="img-responsive">
+                        <a href="#modal" data-toggle="modal" data-image-url="img/modal_points.png">
+                            <img src="img/modal_points.png" alt="modal points" class="img-responsive">
+                        </a>
                     </div>
+                </div>
+            </div>
+            
+            <div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+                <div class="modal-body">
+                    <img src="#">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
                 </div>
             </div>
         </section>
