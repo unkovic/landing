@@ -1,0 +1,21 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "Omnifood restaurant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "omnifood",
+    "restaurant"
+  ],
+  "author": "Nemanja Unkovicž",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {}
+}
